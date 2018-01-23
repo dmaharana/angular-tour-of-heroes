@@ -7,3 +7,12 @@
     </a>
   </li>
 </ul>
+
+<div>
+  <label for="heroName">Hero name:
+    <input #heroName type="text" id="heroName">
+    <button (click)="add(heroName.value); heroName.value=''">
+      add
+    </button>
+  </label>
+</div>
